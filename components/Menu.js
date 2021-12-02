@@ -45,5 +45,13 @@ array.forEach(linkText => {
   link.textContent = linkText;
   menuItems.appendChild(link);
 });
+
+const hamMenu = document.querySelector('.menu-button');
+hamMenu.addEventListener('click', () => {
+menu.classList.toggle('menu--open')
+})
+
 return menu;
 }
+
+document.querySelector('.header').appendChild(menu(menuItems));
